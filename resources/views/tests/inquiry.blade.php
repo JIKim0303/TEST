@@ -4,24 +4,44 @@
 
 @section('content')
 <main>
-    <div class="example">
-        <p class="inquiry_title">お問い合わせ</p>
-        <form>
-            @csrf
-            <div>
-                <label for="name" class="item">名前</label>
-                <input type="text" name="name" class="item">
+    <div class="parent">
+        <img src="{{ asset('storage/background.jpg') }}">
+            <div class="child">
+
+                <h1 class="inquiry_title">お問い合わせ</h1>
+                <form>
+                    @csrf
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="name">お名前</label>
+                            <span>必須</span>
+                        </div>
+                        <input type="text" id="name" name="name" class="item" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="email">Eメールアドレス</label>
+                            <span>必須</span>
+                        </div>
+                        <input type="text" id="email" name="email" class="item" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="content">問い合わせ内容</label>
+                            <span>必須</span>
+                        </div>
+                        <textarea id="content" name="content" class="item" rows="5" required></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-label">
+                            <button class="submit" type="submit" value="送信">送信</button>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <div>
-                <label for="email" class="item">Eメールアドレス</label>
-                <input type="text" name="email" class="item">
-            </div>
-            <div>
-                <label for="content" class="item">問い合わせ内容</label>
-                <textarea name="content" class="item"></textarea>
-            </div>
-            <input type="submit" value="送信">
-        </form>
     </div>
 </main>
 @endsection

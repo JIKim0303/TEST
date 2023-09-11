@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="{{ asset('/css/test.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/inquiry.css') }}">
 
+
+
+
 </head>
 
 <body style="padding: 60px 0;">
