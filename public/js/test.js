@@ -66,7 +66,7 @@ window.addEventListener('DOMContentLoaded', function start(){
             });
         });
 
-        $('.close-btn, .tool-btn.btn-finish').on('click', function() {
+        $('.close-btn-close, .btn-finish').on('click', function() {
             $('.page-wrap').fadeOut(2000);
             location.reload();
         });

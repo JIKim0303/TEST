@@ -15,10 +15,8 @@ return new class extends Migration
     {
         Schema::create('dogs', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('image');
-            $table->foreignId('area_id');
-            $table->foreignId('country_id');
-            $table->string('name');
+            $table->string('name')->null();
+            $table->string('file_name')->null();
             $table->string('purpose');
             $table->string('color');
             $table->text('character');

@@ -10,16 +10,18 @@ class Dog extends Model
     use HasFactory;
 
     public function area() {
-        return $this->belongsTo('App\Models\Area');
+        return $this->belongsTo(Area::class);
     }
 
     public function country() {
-        return $this->belongsTo('App\Models\Country');
+        return $this->belongsTo(Country::class);
     }
 
     protected $fillable = [
-        'image',
         'name',
+        'area_id',
+        'country_id',
+        'file_name',
         'purpose',
         'color',
         'character',

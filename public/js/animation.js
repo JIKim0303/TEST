@@ -11,9 +11,6 @@ ham.addEventListener('click', function() {
 if (scrollValue >= 50) {
     backbtn.style.display='inline';
 }
-// else {
-//     backbtn.style.display='none';
-// };
 
 backbtn.addEventListener('click', function() {
     window.scroll({top: 0, behavior: 'smooth'});

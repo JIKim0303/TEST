@@ -9,8 +9,13 @@ class Country extends Model
 {
     use HasFactory;
 
-    public function dog()
+    protected $fillable = [
+        'id',
+        'name',
+    ];
+
+    public function dogs()
     {
-        return $this->hasMany('App\Models\Dog');
+        return $this->hasMany(Dog::class);
     }
 }

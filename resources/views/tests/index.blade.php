@@ -15,8 +15,13 @@
 
     <div class="container">
         <p>使用したライブラリ：<a href="https://kenwheeler.github.io/slick/">https://kenwheeler.github.io/slick/</a></p>
+
         <img class="mainimg" src="{{ asset('storage/cake.png') }}">
         <img class="mainimg" src="{{ asset('storage/dogline.jpg') }}">
+        <section>
+            <!-- <p>名前：</p><p>{{ }}</p> -->
+        </section>
+        <img class="maining" src="{{ asset('storage/app/public/images'.$dog->img) }}">
     </div>
     <a id="back-btn" class="back-btn" href="#">TOP</a>
 </main>

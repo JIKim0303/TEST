@@ -4,9 +4,9 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Area;
+use App\Models\Country2;
 
-class AreasTableSeeder extends Seeder
+class Countries2TableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -48,7 +48,7 @@ class AreasTableSeeder extends Seeder
         foreach ($areas as $area) {
             if ($area == 'アジア') {
                 foreach ($asias as $asia) {
-                    Area::create([
+                    Country2::create([
                         'name' => $asia,
                         'area' => $area
                     ]);
@@ -57,7 +57,7 @@ class AreasTableSeeder extends Seeder
 
             if ($area == 'ヨーロッパ') {
                 foreach ($europes as $europe) {
-                    Area::create([
+                    Country2::create([
                         'name' => $europe,
                         'area' => $area
                     ]);
@@ -66,7 +66,7 @@ class AreasTableSeeder extends Seeder
 
             if ($area == '北米') {
                 foreach ($namericas as $namerica) {
-                    Area::create([
+                    Country2::create([
                         'name' => $namerica,
                         'area' => $area
                     ]);
@@ -75,7 +75,7 @@ class AreasTableSeeder extends Seeder
 
             if ($area == '南米') {
                 foreach ($samericas as $samerica) {
-                    Area::create([
+                    Country2::create([
                         'name' => $samerica,
                         'area' => $area
                     ]);
@@ -84,7 +84,7 @@ class AreasTableSeeder extends Seeder
 
             if ($area == 'アフリカ') {
                 foreach ($africas as $africa) {
-                    Area::create([
+                    Country2::create([
                         'name' => $africa,
                         'area' => $area
                     ]);
@@ -93,7 +93,7 @@ class AreasTableSeeder extends Seeder
 
             if ($area == 'オセアニア') {
                 foreach ($oceanias as $oceania) {
-                    Area::create([
+                    Country2::create([
                         'name' => $oceania,
                         'area' => $area
                     ]);
