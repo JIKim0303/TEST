@@ -19,7 +19,6 @@ class Dog extends Model
 
     protected $fillable = [
         'name',
-        'area_id',
         'country_id',
         'file_name',
         'purpose',

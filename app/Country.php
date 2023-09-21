@@ -12,7 +12,13 @@ class Country extends Model
     protected $fillable = [
         'id',
         'name',
+        'area_id'
     ];
+
+    public function area()
+    {
+        return $this->belongsTo(Area::class);
+    }
 
     public function dogs()
     {

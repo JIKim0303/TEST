@@ -72,6 +72,10 @@
             <div class="title-wrap">
                 <h1 class="answer-title">あなたにピッタリな犬種は…</h1>
             </div>
+            <div class="img-wrap1">
+                <img class="img1" src="{{ asset('storage/yokusha.jpg') }}">
+                <img class="img2" src="{{ asset('storage/papiyon.jpg') }}">
+            </div>
             <div class="answer-wrap">
                 <h2 class="answer" >ウィペット、バセンジー、パグ、チワワ、ボストンテリア、日本スピッツ</h2>
                 <h2 class="answer" >バセット・ハウンド、パピヨン、ペキニーズ、ヨークシャー・テリア</h2>        
@@ -80,12 +84,20 @@
             <div class="btn-wrap">
                 <button type="button" class="tool-btn btn-finish">診断終了</button>
             </div>
+            <div class="img-wrap2">
+                <img class="img3" src="{{ asset('storage/pagu.jpg') }}">
+                <img class="img4" src="{{ asset('storage/basenji.jpg') }}">
+            </div>
         </div>
 
 <!-- A2回答 -->
         <div class="a2 page-wrap" style="display: none">
             <div class="title-wrap">
                 <h1 class="answer-title">あなたにピッタリな犬種は…</h1>
+            </div>
+            <div class="img-wrap1">
+                <img class="img1" src="{{ asset('storage/itagure.jpg') }}">
+                <img class="img2" src="{{ asset('storage/pudoru.jpg') }}">
             </div>
             <div class="answer-wrap">
                 <h2 class="answer" >トイプードル、チワワ、ビション フリーゼ、イタリアン・グレイハウンド</h2>
@@ -95,12 +107,20 @@
             <div class="btn-wrap">
                 <button type="button" class="tool-btn btn-finish">診断終了</button>
             </div>
+            <div class="img-wrap2">
+                <img class="img3" src="{{ asset('storage/fureburu.jpg') }}">
+                <img class="img4" src="{{ asset('storage/maru.jpg') }}">
+            </div>
         </div>
 
 <!-- A3回答 -->
         <div class="a3 page-wrap" style="display: none">
             <div class="title-wrap">
                 <h1 class="answer-title">あなたにピッタリな犬種は…</h1>
+            </div>
+            <div class="img-wrap1">
+                <img class="img1" src="{{ asset('storage/pinsha.jpg') }}">
+                <img class="img2" src="{{ asset('storage/daru.jpg') }}">
             </div>
             <div class="answer-wrap">
                 <h2 class="answer" >ミニチュアピンシャー、ダルメシアン、シーズー、柴犬、ボストンテリア、アメリカンコッパースパニエル、ウェルシュコーギー</h2>
@@ -110,6 +130,10 @@
             <div class="btn-wrap">
                 <button type="button" class="tool-btn btn-finish">診断終了</button>
             </div>
+            <div class="img-wrap2">
+                <img class="img3" src="{{ asset('storage/ko-gi.jpg') }}">
+                <img class="img4" src="{{ asset('storage/beagul.jpg') }}">
+            </div>
         </div>
 
 <!-- A4回答 -->
@@ -117,12 +141,20 @@
             <div class="title-wrap">
                 <h1 class="answer-title">あなたにピッタリな犬種は…</h1>
             </div>
+            <div class="img-wrap1">
+                <img class="img1" src="{{ asset('storage/柴写真.jpg') }}">
+                <img class="img2" src="{{ asset('storage/kai.jpg') }}">
+            </div>
             <div class="answer-wrap">
                 <h2 class="answer" >シーズー、柴犬、ボストンテリア、トイプードル、フォックステリア、アイリッシュ・テリア、甲斐犬、シベリアン・ハスキー</h2>
                 <p class="answer">です！</p>
             </div>
             <div class="btn-wrap">
                 <button type="button" class="tool-btn btn-finish">診断終了</button>
+            </div>
+            <div class="img-wrap2">
+                <img class="img3" src="{{ asset('storage/si-zu.jpg') }}">
+                <img class="img4" src="{{ asset('storage/huskey.jpg') }}">
             </div>
         </div>
 
@@ -154,6 +186,10 @@
             <div class="title-wrap">
                 <h1 class="answer-title">あなたにピッタリな犬種は…</h1>
             </div>
+            <div class="img-wrap1">
+                <img class="img1" src="{{ asset('storage/sheep.jpg') }}">
+                <img class="img2" src="{{ asset('storage/minishuna.jpg') }}">
+            </div>
             <div class="answer-wrap">
                 <h2 class="answer" >アイリッシュ・ウルフハウンド、秋田犬、ウェルシュコーギー、グレート・ピレニーズ、シェットランド・シープドッグ、ジャーマン・シェパード・ドッグ<br>
                 ジャック・ラッセル・テリア、スタンダードシュナウザー、ミニチュアシュナウザー、セント・バーナード、ドーベルマン、土佐犬、バーニーズ・マウンテン・ドッグ、ビーグル</h2>    
@@ -161,6 +197,10 @@
             </div>
             <div class="btn-wrap">
                 <button type="button" class="tool-btn btn-finish">診断終了</button>
+            </div>
+            <div class="img-wrap2">
+                <img class="img3" src="{{ asset('storage/tosa.jpg') }}">
+                <img class="img4" src="{{ asset('storage/rassel.jpg') }}">
             </div>
         </div>
 
@@ -191,12 +231,20 @@
             <div class="title-wrap">
                 <h1 class="answer-title">あなたにピッタリな犬種は…</h1>
             </div>
+            <div class="img-wrap1">
+                <img class="img1" src="{{ asset('storage/spits.jpg') }}">
+                <img class="img2" src="{{ asset('storage/pegi.jpg') }}">
+            </div>
             <div class="answer-wrap">
                 <h2 class="answer" >ウィペット、バセンジー、パグ、ボストンテリア、日本スピッツ、バセット・ハウンド、パピヨン、ペキニーズ、ヨークシャー・テリア</h2>
                 <p class="answer">です！</p>
             </div>
             <div class="btn-wrap">
                 <button type="button" class="tool-btn btn-finish">診断終了</button>
+            </div>
+            <div class="img-wrap2">
+                <img class="img3" src="{{ asset('storage/boston.jpg') }}">
+                <img class="img4" src="{{ asset('storage/wipet.jpg') }}">
             </div>
         </div>
 </main>

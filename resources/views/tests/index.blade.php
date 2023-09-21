@@ -3,7 +3,6 @@
 @section('title', 'FIND YOUR BEST PARTNER')
 
 @section('content')
-<main class="main">
     <div class="wrapper">
         <h1>Slide Show</h1>
         <ul class="slider">
@@ -17,12 +16,17 @@
         <p>使用したライブラリ：<a href="https://kenwheeler.github.io/slick/">https://kenwheeler.github.io/slick/</a></p>
 
         <img class="mainimg" src="{{ asset('storage/cake.png') }}">
-        <img class="mainimg" src="{{ asset('storage/dogline.jpg') }}">
-        <section>
-            <!-- <p>名前：</p><p>{{ }}</p> -->
+        <section class="randomdog">
+            <h1 class="article">犬種紹介</h1>
+            <h3 class="dogtitle">犬種名：</div>
+            <h3 class="dogtitle"></div>
+            <h3 class="dogtitle">原産国：</div>
+            <h3 class="dogtitle">用途：</div>
+            <h3 class="dogtitle">毛色：</div>
+            <h3 class="dogtitle">性格：</div>
+            <h3 class="dogtitle">沿革：</div>
+                <p class="moredetails"><a href="{{ route('dogprofile') }}">もっと詳しく見る</a></p>
         </section>
-        <img class="maining" src="{{ asset('storage/app/public/images'.$dog->img) }}">
     </div>
     <a id="back-btn" class="back-btn" href="#">TOP</a>
-</main>
 @endsection

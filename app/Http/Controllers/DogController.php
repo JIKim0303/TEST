@@ -6,10 +6,12 @@ use App\Dog;
 use App\Area;
 use App\Country;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class DogController extends Controller
 {
-    public function test() {
+    public function test()
+    {
         return view('tests.test');
     }
 
@@ -88,6 +90,7 @@ class DogController extends Controller
         // $areas = Area::all();
         // $countries = Country::all();
 
+
         $asiadogs = DB::select("select * from dogs where area_id = 1 and country_id = 1 and country_id = 2 and country_id = 3")->simplePaginate(1);
         $europedogs = DB::select("select * from dogs where area_id = 2 and country_id = 4 and country_id = 5 and country_id = 6 and country_id = 7 and country_id = 8 and country_id = 9 and country_id = 10
         country_id = 11 and country_id = 12")->simplePaginate(1);
@@ -98,10 +101,45 @@ class DogController extends Controller
 
     }
 
-    public function dogdetails(Dog $dog)
+    public function dogdetails(int $area_id)
     {
-        return view('tests.dogdetails')->with('dog', 'asiadogs', 'europedogs', 'africadogs', 'namericadogs', 'samericadogs');
+        $results = DB::select("SELECT
+                                dogs.name AS dog_name,
+                                file_name,
+                                purpose,
+                                color,
+                                'character',
+                                history, 
+                                countries.name AS country_name
+                                FROM dogs
+                                JOIN countries ON dogs.country_id = countries.id
+                                JOIN areas ON countries.area_id = areas.id
+                                WHERE areas.id = $area_id
+                                ORDER BY dogs.id ASC");
+        return view('tests.dogdetails', compact('results'));
+        
     }
+
+    // $models = array();
+
+    // foreach($posts as $post)
+    // {
+    //     $model = new IndexViewModel();
+    //     $model->title = $post->title;
+    //     $model->setBody($post->body);
+    //     array_push($models, $model);
+    // }
+
+    // return view("index" ,compact("models"));
+
+
+
+
+
+
+
+
+
 
     /**
      * Show the form for editing the specified resource.

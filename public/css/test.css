@@ -217,8 +217,8 @@ height: 90px;
     display: inline-block;
     position: relative;
     left: 45%;
-    top: 30%;
-    transform: rotate(-15deg);
+    top: 0%;
+    transform: rotate(-5deg);
     width: 25%;
 }
 @media screen and (max-width: 600px) {

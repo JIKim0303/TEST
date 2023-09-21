@@ -18,4 +18,9 @@ class Area extends Model
     {
         return $this->hasMany(Dog::class);
     }
+
+    public function countries()
+    {
+        return $this->hasMany(Country::class);
+    }
 }

@@ -29,6 +29,8 @@ Route::post('/register', [DogController::class, 'store'])->name('store');
 
 Route::get('/dogprofile', [DogController::class, 'dogprofile'])->name('dogprofile');
 
+Route::get('/dogdetails/{area_id}', [DogController::class, 'dogdetails'])->name('dogdetails');
+
 Route::get('/test', [DogController::class, 'test'])->name('test');
 
 Route::get('/inquiry', [DogController::class, 'inquiry'])->name('inquiry');

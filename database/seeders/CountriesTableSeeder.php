@@ -114,5 +114,61 @@ class CountriesTableSeeder extends Seeder
                 ]);
             }
         }
+
+
+
+        // $areas = [
+        //     'Asia', 'Europe', 'Africa',
+        //     'Oceania', 'NorthAmerica', 'SouthAmerica',
+        // ];
+
+        // foreach ($areas as $area) {
+        //     if($area == 'Asia') {
+        //         Country::create([
+        //             'name' => '中国', '日本', 'チベット（中国）'
+        //         ]);
+        //     }
+
+        //     if($name == 'Europe') {
+        //         Country::create([
+        //             'name' => 'フランス', 'フランス・ベルギー', 'イタリア',
+        //             '中央地中海沿岸地域', 'ドイツ', 'クロアチア・ダルメシア地方',
+        //             'イギリス', 'アイルランド', 'スイス'
+        //         ]);
+        //     }
+
+        //     if($name == 'Africa') {
+        //         Country::create([
+        //             'name' => '中央アフリカ'
+        //         ]);
+        //     }
+
+        //     if($name == 'Oceania') {
+        //         Country::create([
+        //             'name' => ''
+        //         ]);
+        //     }
+
+        //     if($name == 'Oceania') {
+        //         Country::create([
+        //             'name' => ''
+        //         ]);
+        //     }
+
+        //     if($name == 'NorthAmerica') {
+        //         Country::create([
+        //             'name' => 'アメリカ'
+        //         ]);
+        //     }
+
+        //     if($name == 'SouthAmerica') {
+        //         Country::create([
+        //             'name' => 'メキシコ'
+        //         ]);
+        //     }
+        // }
+
+
+
     }
 }
