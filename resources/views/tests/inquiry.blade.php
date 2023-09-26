@@ -3,9 +3,8 @@
 @section('title', 'お問い合わせ')
 
 @section('content')
-<main>
     <div class="parent">
-        <img src="{{ asset('storage/background.jpg') }}">
+        <img class="dogback" src="{{ asset('pics/footstamp.jpg') }}">
             <div class="child">
 
                 <h1 class="inquiry_title">お問い合わせ</h1>
@@ -43,5 +42,4 @@
                 </form>
             </div>
     </div>
-</main>
 @endsection

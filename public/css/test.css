@@ -168,16 +168,16 @@ border: none;
 .answer-wrap {
 display: block;
 margin: 0 auto;
-padding-top: 150px;
+padding-top: 15px;
 flex-wrap: wrap;
 width: 100%;
 height: 90px;
 }
 @media screen and (max-width: 600px) {
     .answer-wrap {
-        display: block;
+        display: flex;
         margin: 0 auto;
-        padding-top: 0px;
+        margin-top: 25px;
         flex-wrap: wrap;
         width: 100%;
         height: 90px;
@@ -203,7 +203,8 @@ height: 90px;
 .img1 {
     display: inline-block;
     position: relative;
-    transform: rotate(10deg);
+    top: -50px;
+    transform: rotate(5deg);
     width: 25%;
     }
 @media screen and (max-width: 600px) {
@@ -216,8 +217,8 @@ height: 90px;
 .img2 {
     display: inline-block;
     position: relative;
-    left: 45%;
-    top: 0%;
+    left: 52%;
+    top: -5%;
     transform: rotate(-5deg);
     width: 25%;
 }
@@ -242,7 +243,7 @@ height: 90px;
 
 .img-wrap2 {
     height: 150px;
-    margin-top: 220px;
+    margin-top: 150px;
 }
 
 .img3 {
@@ -256,6 +257,7 @@ height: 90px;
     .img3 {
         position: relative;
         left: 20px;
+        top: 20px;
     }
 }
 
@@ -269,7 +271,8 @@ height: 90px;
 @media screen and (max-width: 600px) {
     .img4 {
         position: relative;
-        left: 110px;
+        left: 150px;
+        top: 20px;
     }
 }
 
@@ -288,6 +291,7 @@ font-size: 30px;
         width: 50%;
         height: inherit;
         font-size: 50%;
+        margin-top: -27px;
     }
 }
 

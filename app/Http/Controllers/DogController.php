@@ -10,6 +10,15 @@ use Illuminate\Support\Facades\DB;
 
 class DogController extends Controller
 {
+    public function index()
+    {
+        $randomdogs = DB::table('dogs')
+                        ->select('dogs.name as dog_name', 'file_name', 'country_id', 'countries.name as country_name', 'purpose', 'color', 'feature')
+                        ->leftJoin('countries', 'dogs.country_id', 'countries.id')
+                        ->inRandomOrder()->first();
+        return view('tests.index', compact('randomdogs'));
+    }
+
     public function test()
     {
         return view('tests.test');
@@ -36,7 +45,8 @@ class DogController extends Controller
      */
     public function register()
     {
-        return view('tests.dogregister');
+        $countryoption = Country::select('id', 'name')->get();
+        return view('tests.dogregister', compact('countryoption'));
     }
 
     /**
@@ -85,61 +95,16 @@ class DogController extends Controller
      * @param  \App\Dog  $dog
      * @return \Illuminate\Http\Response
      */
-    public function show(Dog $dog)
-    {
-        // $areas = Area::all();
-        // $countries = Country::all();
-
-
-        $asiadogs = DB::select("select * from dogs where area_id = 1 and country_id = 1 and country_id = 2 and country_id = 3")->simplePaginate(1);
-        $europedogs = DB::select("select * from dogs where area_id = 2 and country_id = 4 and country_id = 5 and country_id = 6 and country_id = 7 and country_id = 8 and country_id = 9 and country_id = 10
-        country_id = 11 and country_id = 12")->simplePaginate(1);
-        $africadogs = DB::select("select * from dogs where area_id = 3 and country_id = 15")->simplePaginate(1);
-        $namericadogs = DB::select("select * from dogs where area_id = 5 and country_id = 13")->simplePaginate(1);
-        $samericadogs = DB::select("select * from dogs where area_id = 6 and country_id = 14")->simplePaginate(1);
-        // return $asiadogs, $europedogs, $africadogs, $namericadogs, $samericadogs;
-
-    }
 
     public function dogdetails(int $area_id)
     {
-        $results = DB::select("SELECT
-                                dogs.name AS dog_name,
-                                file_name,
-                                purpose,
-                                color,
-                                'character',
-                                history, 
-                                countries.name AS country_name
-                                FROM dogs
-                                JOIN countries ON dogs.country_id = countries.id
-                                JOIN areas ON countries.area_id = areas.id
-                                WHERE areas.id = $area_id
-                                ORDER BY dogs.id ASC");
+        $results = Dog::with('country:id,name as country_name,area_id', 'area:id')
+        ->wherehas('country', function($q) use($area_id)
+        {
+            $q->where('area_id', $area_id);
+        })->simplePaginate(1);
         return view('tests.dogdetails', compact('results'));
-        
     }
-
-    // $models = array();
-
-    // foreach($posts as $post)
-    // {
-    //     $model = new IndexViewModel();
-    //     $model->title = $post->title;
-    //     $model->setBody($post->body);
-    //     array_push($models, $model);
-    // }
-
-    // return view("index" ,compact("models"));
-
-
-
-
-
-
-
-
-
 
     /**
      * Show the form for editing the specified resource.

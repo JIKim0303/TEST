@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
-    @vide(['resources/js.app.js'])
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}" >
-    <link rel="stylesheet" href="{{ asset('js/animation.js') }}" >
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/test.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/dogdetails.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/inquiry.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/worldmap.css') }}">
 </head>
 <body>
-    @include('layouts.header2')
+    @include('layouts.header')
 
-    frame.blade
     <main>
         @yield('content')
     </main>

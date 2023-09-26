@@ -6,7 +6,7 @@
 <main>
     <!-- これは動かない。CSSではこのサイズを大きく設定しておく -->
     <div class="test-container">
-        <img class="dogback" src="{{ asset('storage/footstamp.jpg') }}">
+        <img class="dogback" src="{{ asset('pics/footstamp.jpg') }}">
         <!-- これは最初のタイトル表示のページのラップ。containerよりは幅も高さも小さくする -->
         <!-- さらにインデントを全部一つ下げる -->
         <div class="title-page-wrap page-wrap">

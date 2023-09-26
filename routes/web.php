@@ -19,9 +19,7 @@ use App\Http\Controllers\DogController;
 //     return view('welcome');
 // });
 
-Route::get('/', function() {
-    return view('tests.index');
-});
+Route::get('/', [DogController::class, 'index'])->name('name');
 
 Route::get('/register', [DogController::class, 'register'])->name('register');
 

@@ -19,16 +19,12 @@
     <link rel="stylesheet" href="{{ asset('/css/worldmap.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/test.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/inquiry.css') }}">
-
-
-
-
 </head>
 
-<body style="padding: 60px 0;">
+<body>
         @include('layouts.header')
 
-        <main class="py-4">
+        <main>
             @yield('content')
         </main>
 

@@ -3,11 +3,9 @@ a {
     text-decoration: none;
   }
   
-  ul,
-  li {
+  ul, li {
     list-style: none;
   }
-  
   
   .main {
     margin: auto;
@@ -24,9 +22,7 @@ a {
   }
   
   
-  /* ヘッダー */
-  
-  
+  /* ヘッダー */  
   .header {
     background-color: white;
     width: 100%;
@@ -179,7 +175,7 @@ a {
     border-color: transparent;
     z-index: 9999;
     position: absolute;
-    right: 5%;
+    right: 10px;
   }
   
   @media screen and (min-width: 960px) {
@@ -236,12 +232,12 @@ a {
 /* 画面がスライドする要素をmain要素に移動させたため、main要素の位置を全体的に下へ移動させた。 */
 .main {
     position: relative;
-    top: 70px;
-    padding-top: 0px;
+    top: 100px;
+    padding-top: 50px;
 }
 
-.wrapper h1 {
-    text-align: center;
+.wrapper {
+  padding-top: 55px;
 }
 
 .slider {
@@ -252,26 +248,21 @@ a {
     position: relative;
     z-index: 1;
     padding: 0;
+    /* padding-top: 30px;
+    margin-top: 50px; */
 }
 
 .mypic {
-        width: 500px;
+        width: 375px;
         height: 40%;
         margin: 0 auto;
     }
 @media screen and (min-width: 960px) {
     .mypic {
-    width: 80%;
-    height: 100%;
+    width: 70%;
+    height: 70%;
     margin: 0 auto;
     }
-}
-
-
-.container p {
-    display: block;
-    text-align: center;
-    padding-top: 15px;
 }
 
 .slider-item {
@@ -322,49 +313,36 @@ a {
 }
 
 .slick-prev {
-    /*面左側の矢印の位置*/
     left: 2.5%; 
-    /*面左側の矢印の形状。＜となるように転換させている*/
     transform: rotate(-135deg);
 }
 
 .slick-next {
-    /*面右側の矢印の位置*/
     right: 2.5%;
-    /*画面右側の矢印の形状。＞となるように転換させている*/
     transform: rotate(45deg);
 }
 
 .slick-dots {
-    /*おそらくこれはslick-dots liの親要素(ul要素)に該当する。*/
     position: relative;
     z-index: 3;
     text-align: center;
-    /* ドットの位置が画像にかぶっていたため、margin-topの設定をなくした ドットが全部入っているli要素の親要素ul要素の位置を変更した。*/
-    /* 下記のpadding: 0;を指定するとslick-dotsのul要素が真ん中配置になって、中に入っているドットも中央になる 。margin: 0;を指定しても中央配置にはならない*/
-    padding-top: 10px;
+    padding: 0px;
 }
 
 
 .slick-dots li {
-    /*このセレクタはドット一つ一つ。スライドする画面の下部にあるドットの位置ドットの一つ一つはli要素になっていて、それを囲んでいるのはul要素*/
     display: inline-block;
-    /* 下記のmarginは、ボタン一つ一つの間隔に対するスタイルmargin: 0 20px;としたら左右の間隔が広くなった。 */
     margin: 0 5px;
-    /*スマホ画面の時ドットを非表示にする */
     display: none;
 }
 @media screen and (min-width: 960px) {
     .slick-dots li {
-        /*スライドする画面の下部にあるドットの位置ドットの一つ一つはli要素になっていて、それを囲んでいるのはul要素*/
         display: inline-block;
         margin: 0 5px;
     }
 }
 
 .slick-dots button {
-    /*スライド画面下部の一つ一つのドットのスタイル。*/
-    /*下記のcolorは透明にしないと数字の123がでてきてしまう。*/
     color: transparent;
     outline: none;
     width: 5px;
@@ -373,7 +351,6 @@ a {
     border-radius: 50%;
     background: white;
     border: solid 1px black;
-    /* ここにpaddingを指定するとドット全体が横伸びするように大きくなる。（膨張するイメージ） */
     padding: 0;
 }
 
@@ -381,32 +358,96 @@ a {
     background: #333;
 }
 
-.back-btn {
-    padding: 15px 10px;
-    background-color: #fff;
+.text-ellipsis {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden; 
+}
+
+.container {
+  margin-top: 10px;
+}
+
+.loop__wrap {
+  display: flex;
+  overflow: hidden;
+  }
+  
+  .loop__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  }
+  
+  .loop__list--left {
+  animation: loop-slide 60s infinite linear 0.1s both;
+  }
+  @keyframes loop-slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .loop__item {
+  width: calc(100vw / 2);
+  }
+  
+  .loop__item >img {
+  width: 100%;
+  }
+
+.dogarticle {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.dogtitle {
+  display: flex;
+  justify-content: center;
+}
+
+.dogtitle.color {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.moredetails {
+  text-align: end;
+}
+
+  .top-btn {
+    background-color: transparent;
     color: #000;
     text-decoration: none;
-    border-radius: 50%;
     position: fixed;
-    bottom: 5px;
+    bottom: 0px;
     right: 10px;
-    z-index: 999;
+    z-index: 998;
+}
+@media screen and (min-width: 960px) {
+  .top-btn {
+    background-color: transparent;
+    color: #000;
+    text-decoration: none;
+    position: fixed;
+    bottom: 2px;
+    right: 10px;
+    z-index: 998;
+  }
 }
 
-.mainimg {
-    display: block;
-    height: 70%;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+.top-btn > img {
+  position: relative;
+  right: 10px;
+  bottom: 5px;
 }
-@media screen and(min-width: 960px) {
-    .mainimg {
-        display: block;
-        height: 100%;
-        width: 100%;
-
-        margin-left: auto;
-        margin-right: auto;
-    }
+@media screen and (min-width: 960px) {
+  .top-btn > img {
+    position: relative;
+    right: 8px;
+  }
 }

@@ -6,9 +6,10 @@
 @media screen and (max-width: 960px) {
     .parent {
         position: relative;
-        width: 70%;
-        height: cover;
-    }
+        width: 500px;
+        left: 50%;
+        transform: translateX(-50%);
+        }
 }
 
 .parent > img {
@@ -20,9 +21,7 @@
 }
 @media screen and (max-width: 960px) {
     .parent > img {
-        width: 150%;
-        height: cover;
-        margin: 0 auto;
+        width: cover;
         background-repeat: repeat;
     }
 }
@@ -33,15 +32,14 @@
     left: 15%;
     width: 70%;
     height: 90%;
-    background-color: white;
     margin: 0 auto;
     }
 @media screen and (max-width: 960px) {
     .child {
         position: absolute;
-        top: 20px;
-        left: 25%;
-        width: 100%;
+        top: 25px;
+        left: 15%;
+        width: 70%;
         height: 100%;
         margin: 0 auto;
     }
@@ -61,7 +59,8 @@
 
 .form-row {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
     padding: 30px;
     padding-top: 50px; 
     border-bottom: 1px solid #f2f4f5;
@@ -69,6 +68,7 @@
 @media screen and (max-width: 960px) {
     .form-row {
         display: block;
+        margin: 0 auto;
         align-items: center;
         padding: 5px;
         margin: 0 auto;
@@ -111,7 +111,7 @@
     font-size: 12px;
     font-weight: bold;
     color: black;
-    background-color: #ffc0cb;
+    background-color: white;
 }
 @media screen and (max-width: 960px) {
     .form-label span {
@@ -132,24 +132,25 @@ input, textarea {
 }
 
 .submit {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     cursor: pointer;
-    margin-top: 30px;
+    margin-top: 10px;
     padding: 15px 45px;
     border: none;
     border-radius: 3px;
     color: black;
     font-weight: bold;
-    background-color: #ffc0cb;
-    position: relative;
-    left: 145%;
+    background-color: ffc0cb;
     font-size: 15px;
 }
 @media screen and (max-width: 960px) {
     .submit {
-        display: inline-block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
         width: 50%;
         text-align: center;
-        position: relative;
-        left: 5%;
     }
 }

@@ -1,6 +1,6 @@
 const ham = document.getElementById('js-hamburger');
 const nav = document.getElementById('js-nav');
-const backbtn = document.getElementById('back-btn');
+const topbtn = document.getElementById('top-btn');
 const scrollValue = document.scrollingElement.scrollTop;
 
 ham.addEventListener('click', function() {
@@ -8,10 +8,6 @@ ham.addEventListener('click', function() {
     nav.classList.toggle('active');
 });
 
-if (scrollValue >= 50) {
-    backbtn.style.display='inline';
-}
-
-backbtn.addEventListener('click', function() {
+topbtn.addEventListener('click', function() {
     window.scroll({top: 0, behavior: 'smooth'});
 });
