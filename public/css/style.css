@@ -403,6 +403,7 @@ a {
 .dogarticle {
   width: 80%;
   margin: 0 auto;
+  background-color: yellow;
 }
 
 .dogtitle {
@@ -417,6 +418,10 @@ a {
 
 .moredetails {
   text-align: end;
+}
+
+.dogbox {
+  margin-top: 100px;
 }
 
   .top-btn {
