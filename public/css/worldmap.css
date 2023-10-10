@@ -1,5 +1,6 @@
 .area:hover {
-    opacity: 0.8;
+    opacity: 0.95;
+    filter: brightness(110%);
     background: hsl(200deg 62% 75%);
     box-shadow: 0 3px 0 hsl(200deg 47% 60%), 0 6px 0 rgba(0,0,0,.2);
     transform: translateY(1px);

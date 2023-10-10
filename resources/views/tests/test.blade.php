@@ -1,6 +1,6 @@
 @extends('layouts.frame')
 
-@section('title', 'お問い合わせ')
+@section('title', '犬種診断')
 
 @section('content')
 <main>
@@ -77,9 +77,7 @@
                 <img class="img2" src="{{ asset('storage/papiyon.jpg') }}">
             </div>
             <div class="answer-wrap">
-                <h2 class="answer" >ウィペット、バセンジー、パグ、チワワ、ボストンテリア、日本スピッツ</h2>
-                <h2 class="answer" >バセット・ハウンド、パピヨン、ペキニーズ、ヨークシャー・テリア</h2>        
-                <p class="answer">です！</p>
+                <h2 class="answer" >ウィペット、バセンジー、パグ、チワワ、ボストンテリア、日本スピッツ、バセット・ハウンド、パピヨン、ペキニーズ、ヨークシャー・テリア</h2><span class="answer">です！</span>
             </div>
             <div class="btn-wrap">
                 <button type="button" class="tool-btn btn-finish">診断終了</button>
@@ -100,9 +98,7 @@
                 <img class="img2" src="{{ asset('storage/pudoru.jpg') }}">
             </div>
             <div class="answer-wrap">
-                <h2 class="answer" >トイプードル、チワワ、ビション フリーゼ、イタリアン・グレイハウンド</h2>
-                <h2 class="answer" >マルチーズ、フレンチブルドック、ポメラニアン</h2>
-                <p class="answer">です！</p>
+                <h2 class="answer" >トイプードル、チワワ、ビション フリーゼ、イタリアン・グレイハウンド、マルチーズ、フレンチブルドック、ポメラニアン</h2><span class="answer">です！</span>
             </div>
             <div class="btn-wrap">
                 <button type="button" class="tool-btn btn-finish">診断終了</button>
@@ -123,9 +119,8 @@
                 <img class="img2" src="{{ asset('storage/daru.jpg') }}">
             </div>
             <div class="answer-wrap">
-                <h2 class="answer" >ミニチュアピンシャー、ダルメシアン、シーズー、柴犬、ボストンテリア、アメリカンコッパースパニエル、ウェルシュコーギー</h2>
-                <h2 class="answer" >シェットランド・シープドッグ、ジャック・ラッセル・テリア、スタンダードシュナウザー、ミニチュアシュナウザー、ビーグル</h2>        
-                <p class="answer">です！</p>
+                <h2 class="answer" >ミニチュアピンシャー、ダルメシアン、シーズー、柴犬、ボストンテリア、アメリカンコッパースパニエル、ウェルシュコーギー
+                    、シェットランド・シープドッグ、ジャック・ラッセル・テリア、スタンダードシュナウザー、ミニチュアシュナウザー、ビーグル</h2><span class="answer">です！</span>
             </div>
             <div class="btn-wrap">
                 <button type="button" class="tool-btn btn-finish">診断終了</button>
@@ -146,8 +141,7 @@
                 <img class="img2" src="{{ asset('storage/kai.jpg') }}">
             </div>
             <div class="answer-wrap">
-                <h2 class="answer" >シーズー、柴犬、ボストンテリア、トイプードル、フォックステリア、アイリッシュ・テリア、甲斐犬、シベリアン・ハスキー</h2>
-                <p class="answer">です！</p>
+                <h2 class="answer" >シーズー、柴犬、ボストンテリア、トイプードル、フォックステリア、アイリッシュ・テリア、甲斐犬、シベリアン・ハスキー</h2><span class="answer">です！</span>
             </div>
             <div class="btn-wrap">
                 <button type="button" class="tool-btn btn-finish">診断終了</button>
@@ -168,16 +162,15 @@
                 <img class="img2" src="{{ asset('storage/goldenretriver.jpg') }}">
             </div>
             <div class="answer-wrap">
-                <h2 class="answer" >基本的にライフスタイル面においてはどんな犬種でも飼育可能ですが、特に：フォックステリア、ボーダーコリー、ゴールデンレトリバー、アイリッシュ・セター<br>
-                アメリカンコッパースパニエル、甲斐犬、グレート・デーン、シベリアン・ハスキー、ラブラドール・レトリーバー、ロットワイラー、ワイマラナー</h2>     
-                <p class="answer">です！</p>
+                <h2 class="answer" >基本的にライフスタイル面においてはどんな犬種でも飼育可能ですが、特に：<br>フォックステリア、ボーダーコリー、ゴールデンレトリバー、アイリッシュ・セター<br>
+                アメリカンコッパースパニエル、甲斐犬、グレート・デーン、シベリアン・ハスキー、ラブラドール・レトリーバー、ロットワイラー、ワイマラナー</h2><span class="answer">です！</span>
             </div>
             <div class="btn-wrap">
                 <button type="button" class="tool-btn btn-finish">診断終了</button>
             </div>
             <div class="img-wrap2">
                 <img class="img3" src="{{ asset('storage/spa.jpg') }}">
-                <img class="img4" src="{{ asset('storage/fox.jpg') }}">
+                <img class="img4" src="{{ asset('storage/wirefox.jpg') }}">
             </div>
         </div>
 
@@ -192,8 +185,7 @@
             </div>
             <div class="answer-wrap">
                 <h2 class="answer" >アイリッシュ・ウルフハウンド、秋田犬、ウェルシュコーギー、グレート・ピレニーズ、シェットランド・シープドッグ、ジャーマン・シェパード・ドッグ<br>
-                ジャック・ラッセル・テリア、スタンダードシュナウザー、ミニチュアシュナウザー、セント・バーナード、ドーベルマン、土佐犬、バーニーズ・マウンテン・ドッグ、ビーグル</h2>    
-                <p class="answer">です！</p>
+                ジャック・ラッセル・テリア、スタンダードシュナウザー、ミニチュアシュナウザー、セント・バーナード、ドーベルマン、土佐犬、バーニーズ・マウンテン・ドッグ、ビーグル</h2><span class="answer">です！</span>
             </div>
             <div class="btn-wrap">
                 <button type="button" class="tool-btn btn-finish">診断終了</button>
@@ -214,8 +206,7 @@
                 <img class="img2" src="{{ asset('storage/tiwawa.jpg') }}">
             </div>
             <div class="answer-wrap">
-                <h2 class="answer" >チワワ、ビション フリーゼ、イタリアン・グレイハウンド、マルチーズ、フレンチブルドック、ポメラニアン</h2>
-                <p class="answer">です！</p>
+                <h2 class="answer" >チワワ、ビション フリーゼ、イタリアン・グレイハウンド、マルチーズ、フレンチブルドック、ポメラニアン</h2><span class="answer">です！</span>
             </div>
             <div class="btn-wrap">
                 <button type="button" class="tool-btn btn-finish">診断終了</button>
@@ -236,8 +227,7 @@
                 <img class="img2" src="{{ asset('storage/pegi.jpg') }}">
             </div>
             <div class="answer-wrap">
-                <h2 class="answer" >ウィペット、バセンジー、パグ、ボストンテリア、日本スピッツ、バセット・ハウンド、パピヨン、ペキニーズ、ヨークシャー・テリア</h2>
-                <p class="answer">です！</p>
+                <h2 class="answer" >ウィペット、バセンジー、パグ、ボストンテリア、日本スピッツ、バセット・ハウンド、パピヨン、ペキニーズ、ヨークシャー・テリア</h2><span class="answer">です！</span>
             </div>
             <div class="btn-wrap">
                 <button type="button" class="tool-btn btn-finish">診断終了</button>

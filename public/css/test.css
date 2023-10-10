@@ -182,10 +182,20 @@ height: 90px;
     .answer-wrap {
         display: flex;
         margin: 0 auto;
-        margin-top: 25px;
+        margin-top: 5px;
         flex-wrap: wrap;
         width: 100%;
         height: 90px;
+    }
+}
+
+.answer-wrap > h2 {
+    margin-top: 58px;
+}
+@media screen and (max-width: 600px) {
+    .answer-wrap > h2  {
+        margin-top: 0px;
+        font-size: 12px;
     }
 }
 
@@ -223,9 +233,9 @@ height: 90px;
     display: inline-block;
     position: relative;
     left: 52%;
-    top: -5%;
+    top: -15%;
     transform: rotate(-5deg);
-    width: 25%;
+    width: 20%;
 }
 @media screen and (max-width: 600px) {
     .img2 {
@@ -234,14 +244,12 @@ height: 90px;
     }
 }
 
-@media screen and (max-width: 600px) {
-    .answer-wrap > h2  {
-        font-size: 14px;
-    }
+.answer-wrap > span {
+    display: block;
+    font-size: 18px;
 }
-
 @media screen and (max-width: 600px) {
-    .answer-wrap > p {
+    .answer-wrap > span {
         font-size: 12px;
     }
 }
@@ -293,10 +301,10 @@ font-size: 30px;
 }
 @media screen and (max-width: 600px) {
     .tool-btn {
-        width: 50%;
+        width: 30%;
         height: inherit;
         font-size: 50%;
-        margin-top: -27px;
+        margin-top: 0px;
     }
 }
 

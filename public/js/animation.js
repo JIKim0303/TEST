@@ -1,7 +1,6 @@
 const ham = document.getElementById('js-hamburger');
 const nav = document.getElementById('js-nav');
 const topbtn = document.getElementById('top-btn');
-const scrollValue = document.scrollingElement.scrollTop;
 
 ham.addEventListener('click', function() {
     ham.classList.toggle('active');
