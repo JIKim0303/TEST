@@ -28,7 +28,7 @@ background-color: #F5FFFA;
 
 .page-wrap.dog {
     height: inherit;
-    background-color: #ffeaff;
+    background-color: rgba(255,224,255,0.5);
 }
 
 .title-wrap {
