@@ -1,3 +1,13 @@
+.profile-title {
+    margin-top: 92px;
+    font-size: 15px;
+}
+@media screen and (min-width: 960px) {
+    .profile-title {
+        font-size: 25px;
+    }
+}
+
 .area:hover {
     opacity: 0.95;
     filter: brightness(110%);

@@ -1,28 +1,26 @@
 .parent {
     position: relative;
-    width: 100%;
-    height: cover;
+    width: 390px;
+    margin: 0 auto;
 }
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 960px) {
     .parent {
-        position: relative;
-        width: 500px;
-        left: 50%;
-        transform: translateX(-50%);
+        width: 100%;
+        /* left: 50%;
+        transform: translateX(-50%); */
+        margin: 0 auto;
         }
 }
 
 .parent > img {
-    display: inline-block;
-    width: 150%;
-    height: cover;
+    width: 390px;
     margin: 0 auto;
-    background-repeat: repeat;
+    background-repeat: repeat-y;
 }
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 960px) {
     .parent > img {
-        width: cover;
-        background-repeat: repeat;
+        width: 100%;
+        margin: 0 auto;
     }
 }
 
@@ -98,9 +96,13 @@
     }
 }
 
-@media screen and (max-width: 960px) {
+.item {
+    width: 70%;
+    height: 10px;
+}
+@media screen and (min-width: 960px) {
     .item {
-        width: 60%;
+        height: 100%;
     }
 }
 
@@ -131,10 +133,14 @@ input, textarea {
     flex-grow: 1;
 }
 
+
 .submit {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    width: 30%;
+    height: 10%;
+    font-size: 10%;
     cursor: pointer;
     margin-top: 10px;
     padding: 15px 45px;
@@ -143,13 +149,17 @@ input, textarea {
     color: black;
     font-weight: bold;
     background-color: ffc0cb;
+    white-space: nowrap;
+}
+@media screen and (min-width: 960px) {
+.submit {
+    width: 120px;
     font-size: 15px;
 }
-@media screen and (max-width: 960px) {
+}
+@media screen and (min-width: 960px) {
     .submit {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+
         width: 50%;
         text-align: center;
     }

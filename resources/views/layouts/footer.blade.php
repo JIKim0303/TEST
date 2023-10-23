@@ -1,6 +1,6 @@
 <footer>
-    <div class="footerlogo">
-        <p>&copy; {{config('app.name') }} All rights reserved.</p>
+    <div>
+        <p class="footerlogo">&copy; {{config('app.name') }} All rights reserved.</p>
         <a id="top-btn" class="top-btn">TOP<br><img src="{{ asset('pics/foot.svg') }}"></a>
     </div>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

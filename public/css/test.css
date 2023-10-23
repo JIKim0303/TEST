@@ -119,6 +119,7 @@ font-size: 30px;
 @media screen and (max-width: 600px) {
     .select-wrap > h2 {
         font-size: 80%;
+        text-align: center;
     }
 }
 

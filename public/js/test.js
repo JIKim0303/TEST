@@ -4,11 +4,13 @@ var ans1 = '';
 var ans2 = '';
 var ans3 = '';
 
-window.addEventListener('DOMContentLoaded', function start(){
+$('.testmain').ready(function start() {
+    $('.title-page-wrap').fadeIn(2000);
     $('.btn-start').on('click', function() {
         $('.title-page-wrap').fadeOut(1000);
         $(QUESTIONS[qPage]).fadeIn(1000);
     });
+});
 
 /*各質問ページでYes/Noを選択したときの処理*/
     $(function gaming() {
@@ -40,6 +42,7 @@ window.addEventListener('DOMContentLoaded', function start(){
             $(QUESTIONS[qPage]).fadeOut(2000);
             qPage++;
             $(QUESTIONS[qPage]).fadeIn(1000);
+            // かつq3ページ以上ならquestionぺーじを非表示に
             if ($(QUESTIONS[qPage]) >= $('.q3')) {
                 ($('.btn-result')).prop('disabled', false);
             };
@@ -71,4 +74,4 @@ window.addEventListener('DOMContentLoaded', function start(){
             location.reload();
         });
     });
-});
+

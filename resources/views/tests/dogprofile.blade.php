@@ -4,7 +4,7 @@
 
 @section('content')
     <div>
-        <h1>世界のわんちゃんたちを知ろう！</h1>
+        <h1 class="profile-title">世界のわんちゃんたちを知ろう！</h1>
         <svg xml:space="preserve" viewBox="0 0 1480 823" style="background-color: #00ffff; border-radius: 10%;">
             <g>
                 <a class="area" href="{{ route('dogdetails', ['area_id' => '1']) }}">

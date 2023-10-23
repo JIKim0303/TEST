@@ -3,7 +3,7 @@
 @section('title', '犬種診断')
 
 @section('content')
-<main>
+<main class ="testmain">
     <!-- これは動かない。CSSではこのサイズを大きく設定しておく -->
     <div class="test-container">
         <img class="dogback" src="{{ asset('pics/footstamp.jpg') }}">

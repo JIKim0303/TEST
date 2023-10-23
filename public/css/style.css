@@ -17,6 +17,17 @@ a {
     display: flex;
   }
   
+  .footerlogo {
+    margin-top: 30px;
+    font-size: 12px;
+  }
+  @media screen and (min-width: 960px){
+    .footerlogo {
+      margin-top: 0px;
+      font-size: 20px;
+    }
+  }
+
   .footer div {
     margin: auto;
   }
@@ -406,9 +417,30 @@ a {
   background-color: #ffeaea;
 }
 
+.dog_img {
+  margin: 0 auto;
+  width: 70%;
+  height: 70%;
+}
+@media screen and (min-width: 960px) {
+  .dog_img {
+      margin: 0 auto;
+      width: 90%;
+      height: 90%;
+  }
+}
+
 .dogtitle {
   display: flex;
   justify-content: center;
+  font-size: 80%;
+}
+@media screen and (min-width: 960px) {
+  .dogtitle {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  }
 }
 
 .dogtitle.color {
@@ -418,6 +450,13 @@ a {
 
 .moredetails {
   text-align: end;
+  font-size: 80%;
+}
+@media screen and (min-width: 960px) {
+  .moredetails {
+    text-align: end;
+    font-size: 20px;
+  }
 }
 
 .dogbox {
@@ -427,7 +466,6 @@ a {
   .top-btn {
     background-color: transparent;
     color: #000;
-    text-decoration: none;
     position: fixed;
     bottom: 0px;
     right: 10px;
@@ -437,7 +475,6 @@ a {
   .top-btn {
     background-color: transparent;
     color: #000;
-    text-decoration: none;
     position: fixed;
     bottom: 2px;
     right: 10px;
@@ -445,14 +482,21 @@ a {
   }
 }
 
-.top-btn > img {
+/* .top-btn > a {
   position: relative;
-  right: 10px;
+
+} */
+
+.top-btn > img {
+  width: 80%;
+  height: 80%;
+  position: relative;
+  right: 5px;
   bottom: 5px;
 }
 @media screen and (min-width: 960px) {
   .top-btn > img {
     position: relative;
-    right: 8px;
+    right: 5px;
   }
 }
