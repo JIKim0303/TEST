@@ -11,12 +11,13 @@
         <!-- さらにインデントを全部一つ下げる -->
         <div class="title-page-wrap page-wrap">
             <div class="title-wrap">
-                <h1 class="title">犬種診断</h1>
-            </div>
-            <div class="select-wrap">
+                <h1>犬種診断</h1><br>
                 <h2>ワンちゃんとの最高の生活のために診断してみよう！</h2>
             </div>
-            <div class="btn-wrap">
+            <!-- <div class="select-wrap">
+                <h2>ワンちゃんとの最高の生活のために診断してみよう！</h2>
+            </div>-->
+            <div class="btn-wrap start">
                 <button type="button" class="tool-btn btn-start">診断スタート</button>
             </div>
         </div>
