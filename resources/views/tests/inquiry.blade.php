@@ -6,8 +6,11 @@
     <div class="parent">
         <img class="dogback" src="{{ asset('pics/footstamp.jpg') }}">
             <div class="child">
+            <iframe class="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSecHqkTupvGHeyLyBqlQmaEUm7dkGfP9kdeFs8QKtS51TG3sw/viewform?embedded=true" width="700" height="1000" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+                <!-- <h1 class="inquiry_title">フォームは<a class="inpuiry_link" href="https://docs.google.com/forms/d/e/1FAIpQLSecHqkTupvGHeyLyBqlQmaEUm7dkGfP9kdeFs8QKtS51TG3sw/viewform">こちら</a></h1> -->
+            </div>
 
-                <h1 class="inquiry_title">お問い合わせ</h1>
+                <!-- <h1 class="inquiry_title">お問い合わせ</h1>
                 <form>
                     @csrf
                     <div class="form-row">
@@ -39,7 +42,6 @@
                             <button class="submit" type="submit" value="送信">送信</button>
                         </div>
                     </div>
-                </form>
-            </div>
+                </form> -->
     </div>
 @endsection

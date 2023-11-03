@@ -1,10 +1,18 @@
+body {
+    font-family: "Futura", Helvetica, sans-serif;
+}
+
 .test-container {
 position: relative;
 display: block;
 width: 100%;
-height: 1000px;
-background-color: yellow;
+height: auto;
 margin: 0 auto;
+}
+@media screen and (max-width: 600px) {
+    .test-container {
+        height: 400px;
+    }
 }
 
 .dogback {
@@ -14,16 +22,50 @@ background-repeat: repeat-y;
 background-size: 500px auto;
 }
 
+.title-page-wrap.page-wrap {
+    display: block;
+    position: absolute;
+    top: 18%;
+    left: 5%;
+    right: 5%;
+    margin: 0 auto;
+    width: 90%;
+    height: 600px;
+    background-color: rgb(248, 248, 255, 0.7);
+}
+@media screen and (max-width: 600px) {
+    .title-page-wrap.page-wrap {
+    display: block;
+    position: absolute;
+    top: 18%;
+    left: 5%;
+    right: 5%;
+    margin: 0 auto;
+    width: 90%;
+    height: 70%;
+    background-color: rgb(248, 248, 255, 0.7);
+    }
+}
+
 .page-wrap {
 display: block;
 position: absolute;
+top: 100px;
 left: 5%;
 right: 5%;
-top: 100px;
 margin: 0 auto;
 width: 90%;
-height: 80%;
+height: 655px;
 background-color: rgba(248,248,255, 0.7);
+}
+@media screen and (max-width: 600px) {
+    .page-wrap {
+        position: absolute;
+        top: 90px;
+        left: 5%;
+        right: 5%;
+        height: 34%;
+    }
 }
 
 .page-wrap.dog {
@@ -35,23 +77,36 @@ background-color: rgba(248,248,255, 0.7);
 position: absolute;
 top: 10px;
 width: 100%;
-/* height: 40%; */
+height: auto;
+}
+@media screen and (max-width: 600px) {
+    .title-wrap {
+        position: inherit;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width:50%;
+    }
 }
 
 .title-wrap > h1 {
 text-align: center;
-/* font-size: 30px; */
 margin-top: 50px;
 }
 @media screen and (max-width: 600px) {
     .title-wrap > h1  {
-        font-size: 15px;
+        margin: 0;
+        font-size: 12px;
     }
 }
 
 .title-wrap > h2 {
     text-align: center;
-    /* font-size: 20px; */
+}
+@media screen and (max-width: 600px) {
+    .title-wrap > h2  {
+        font-size: 12px;
+    }
 }
 
 
@@ -71,7 +126,7 @@ display: block;
 width: 100%;
 text-align: center;
 position: absolute;
-top: 60%;
+top: 65%;
 }
 @media screen and (max-width: 600px) {
     .btn-wrap {
@@ -80,16 +135,17 @@ top: 60%;
         height: 30%;
         text-align: center;
         position: absolute;
-        top: 45%;
+        top: 68%;
     }
 }
 
 .btn-wrap.start {
     display: block;
     width: 100%;
+    height: auto;
     text-align: center;
     position: absolute;
-    top: 40%;
+    top: 55%;
 }
 
 .close-btn-close {
@@ -118,7 +174,7 @@ justify-content: space-around;
 @media screen and (max-width: 600px) {
     .select-wrap {
         position: relative;
-        top: 25%;
+        top: 40%;
         flex-direction: column;
         gap: 10px;
     }
@@ -149,15 +205,16 @@ border-width: 10px;
         left: 50%;
         transform: translateX(-50%);
         width: 50%;
-        height: 50%;
+        height: 85%;
         border-radius: 5%;
         font-size: 50%;
+        border-style: ridge;
+        border-width: 7px;
     }
 }
 
 .select.yes {
     border-color: pink;
-    /* 10px ridge */
 }
 @media screen and (max-width: 600px) {
     .select.yes {
@@ -187,7 +244,6 @@ border-width: 10px;
 .answer-wrap {
 display: block;
 margin: 0 auto;
-padding-top: 15px;
 flex-wrap: wrap;
 width: 100%;
 height: 90px;
@@ -196,7 +252,7 @@ height: 90px;
     .answer-wrap {
         display: flex;
         margin: 0 auto;
-        margin-top: 5px;
+        padding-top: 15px;
         flex-wrap: wrap;
         width: 100%;
         height: 90px;
@@ -204,17 +260,16 @@ height: 90px;
 }
 
 .answer-wrap > h2 {
-    margin-top: 58px;
+    margin-top: 50px;
 }
 @media screen and (max-width: 600px) {
     .answer-wrap > h2  {
-        margin-top: 0px;
-        font-size: 12px;
+        margin-top: 15px;
+        font-size: 10.5px;
     }
 }
 
 .answer-title {
-    display: inline-block;
     position: relative;
     top: 20px;
     font-size: 30px;
@@ -226,7 +281,7 @@ height: 90px;
 }
 
 .img-wrap1 {
-    height: 150px;
+    height: auto;
 }
 
 .img1 {
@@ -239,7 +294,7 @@ height: 90px;
 @media screen and (max-width: 600px) {
     .img1 {
         position: relative;
-        top: 86px;
+        top: 15px;
     }
 }
 
@@ -254,7 +309,7 @@ height: 90px;
 @media screen and (max-width: 600px) {
     .img2 {
         position: relative;
-        top: 80px;
+        top: 0px;
     }
 }
 
@@ -264,12 +319,12 @@ height: 90px;
 }
 @media screen and (max-width: 600px) {
     .answer-wrap > span {
-        font-size: 12px;
+        font-size: 10.5px;
     }
 }
 
 .img-wrap2 {
-    height: 150px;
+    height: auto;
     margin-top: 150px;
 }
 
@@ -284,7 +339,7 @@ height: 90px;
     .img3 {
         position: relative;
         left: 20px;
-        top: 20px;
+        top: -110px;
     }
 }
 
@@ -298,10 +353,11 @@ height: 90px;
 @media screen and (max-width: 600px) {
     .img4 {
         position: relative;
-        left: 150px;
-        top: 20px;
+        left: 185px;
+        top: -110px;
     }
 }
+
 
 .tool-btn {
 display: block;
@@ -317,14 +373,27 @@ font-size: 30px;
 }
 @media screen and (max-width: 600px) {
     .tool-btn {
+        border-style: ridge;
+        border-width: 7px;
         width: 30%;
-        height: inherit;
+        height: 40%;
         font-size: 50%;
         margin-top: 0px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .tool-btn.btn-start {
+        height: 50%;
     }
 }
 
 .tool-btn:active {
     box-shadow: 10px 5px 5px #a9a9a9;
     animation-duration: 1.0s;
+    }
+
+    @media screen and (max-width: 600px) {
+        .br-sp {
+            display: none;
+        }
     }

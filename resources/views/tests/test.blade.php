@@ -7,16 +7,11 @@
     <!-- これは動かない。CSSではこのサイズを大きく設定しておく -->
     <div class="test-container">
         <img class="dogback" src="{{ asset('pics/footstamp.jpg') }}">
-        <!-- これは最初のタイトル表示のページのラップ。containerよりは幅も高さも小さくする -->
-        <!-- さらにインデントを全部一つ下げる -->
         <div class="title-page-wrap page-wrap">
             <div class="title-wrap">
                 <h1>犬種診断</h1><br>
                 <h2>ワンちゃんとの最高の生活のために診断してみよう！</h2>
             </div>
-            <!-- <div class="select-wrap">
-                <h2>ワンちゃんとの最高の生活のために診断してみよう！</h2>
-            </div>-->
             <div class="btn-wrap start">
                 <button type="button" class="tool-btn btn-start">診断スタート</button>
             </div>
@@ -163,7 +158,7 @@
                 <img class="img2" src="{{ asset('storage/goldenretriver.jpg') }}">
             </div>
             <div class="answer-wrap">
-                <h2 class="answer" >基本的にライフスタイル面においてはどんな犬種でも飼育可能ですが、特に：<br>フォックステリア、ボーダーコリー、ゴールデンレトリバー、アイリッシュ・セター<br>
+                <h2 class="answer" >基本的にライフスタイル面においてはどんな犬種でも飼育可能ですが、特に：<br>フォックステリア、ボーダーコリー、ゴールデンレトリバー、アイリッシュ・セター、<br class="br-sp">
                 アメリカンコッパースパニエル、甲斐犬、グレート・デーン、シベリアン・ハスキー、ラブラドール・レトリーバー、ロットワイラー、ワイマラナー</h2><span class="answer">です！</span>
             </div>
             <div class="btn-wrap">

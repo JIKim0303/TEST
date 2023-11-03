@@ -28,3 +28,6 @@ Route::get('/dogdetails/{area_id}', [DogController::class, 'dogdetails'])->name(
 Route::get('/test', [DogController::class, 'test'])->name('test');
 
 Route::get('/inquiry', [DogController::class, 'inquiry'])->name('inquiry');
+// Route::get('/inquiry', function() {
+//     return redirect('https://forms.gle/HJuGoHruZxh2cLq17');
+// })->name('inquiry');

@@ -60,13 +60,8 @@ class DogController extends Controller
         $dog = new Dog;
         $dog->name = $request->input('name');
 
-        //画像を保存する専用で、新しく作成したフォルダの名前を$dirに格納する。
-        //imagesフォルダのパス⇒C:\xampp\htdocs\TEST\storage\app\public\images
-        // $file_name = $request->file('img')->getClientOriginalName();
         $file_name = $request->img->getClientOriginalName();
         $dir = 'images';
-        //bladeファイルでfile要素のimgネームにアップされた動画を、そのファイル名を維持したまま
-        //public/images/の中に保存する。
         $request->img->storeAs('public/' . $dir, $file_name);
         $dog->file_name = $file_name;
 
@@ -79,14 +74,11 @@ class DogController extends Controller
             $country = $_POST["country"];
         }
         $dog->country_id = $country;
-
-
         $dog->purpose = $request->input('purpose');
         $dog->color = $request->input('color');
         $dog->character = $request->input('character');
         $dog->history = $request->input('history');
         $dog->save();
-        // $randomdog = DB::inRandomOrder()->first();
         return view('tests.index', compact('dog'));
     }
     /**
@@ -112,5 +104,4 @@ class DogController extends Controller
      * @param  \App\Dog  $dog
      * @return \Illuminate\Http\Response
      */
-
 }
