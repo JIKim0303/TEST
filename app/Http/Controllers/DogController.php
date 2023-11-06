@@ -61,14 +61,8 @@ class DogController extends Controller
         $dog->name = $request->input('name');
 
         $file_name = $request->img->getClientOriginalName();
-        $dir = 'images';
-        $request->img->storeAs('public/' . $dir, $file_name);
+        $request->img->storeAs('public/', $file_name);
         $dog->file_name = $file_name;
-
-        if(isset($_POST["area"])) {
-            $area = $_POST["area"];
-        }
-        $dog->area_id = $area;
         
         if(isset($_POST["country"])) {
             $country = $_POST["country"];
@@ -76,10 +70,10 @@ class DogController extends Controller
         $dog->country_id = $country;
         $dog->purpose = $request->input('purpose');
         $dog->color = $request->input('color');
-        $dog->character = $request->input('character');
+        $dog->feature = $request->input('feature');
         $dog->history = $request->input('history');
         $dog->save();
-        return view('tests.index', compact('dog'));
+        return view('tests.index');
     }
     /**
      * Display the specified resource.

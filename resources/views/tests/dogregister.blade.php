@@ -4,7 +4,7 @@
 
 @section('content')
 <main class ="register_main">
-    <div class="registerwrap">
+    <div class="registerwrap" style="position: absolute; top: 150px;">
         <div class="registercontainer">
             <form enctype="multipart/form-data" action="{{ route('store') }}" method="post">
             @csrf

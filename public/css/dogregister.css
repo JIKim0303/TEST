@@ -1,8 +1,5 @@
 .registerwrap {
-
-    margin-top: 250px;
+    position: absolute;
+    top: 150px;
 }
 
-.register_main {
-
-}

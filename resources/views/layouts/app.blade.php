@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ asset('css/test.css') }}">
     <link rel="stylesheet" href="{{ asset('css/inquiry.css') }}">
     <link rel="stylesheet" href="{{ asset('css/worldmap.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/dogregister.css') }}">
 </head>
 <body>
     @include('layouts.header')
