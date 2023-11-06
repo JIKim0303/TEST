@@ -19,8 +19,6 @@ Route::get('/', [DogController::class, 'index'])->name('name');
 
 Route::get('/register', [DogController::class, 'register'])->name('register');
 
-Route::post('/register', [DogController::class, 'store'])->name('store');
-
 Route::get('/dogprofile', [DogController::class, 'dogprofile'])->name('dogprofile');
 
 Route::get('/dogdetails/{area_id}', [DogController::class, 'dogdetails'])->name('dogdetails');
@@ -28,6 +26,3 @@ Route::get('/dogdetails/{area_id}', [DogController::class, 'dogdetails'])->name(
 Route::get('/test', [DogController::class, 'test'])->name('test');
 
 Route::get('/inquiry', [DogController::class, 'inquiry'])->name('inquiry');
-// Route::get('/inquiry', function() {
-//     return redirect('https://forms.gle/HJuGoHruZxh2cLq17');
-// })->name('inquiry');

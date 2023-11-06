@@ -49,39 +49,6 @@ class DogController extends Controller
         return view('tests.dogregister', compact('countryoption'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        $dog = new Dog;
-        $dog->name = $request->input('name');
-
-        $file_name = $request->img->getClientOriginalName();
-        $request->img->storeAs('public/', $file_name);
-        $dog->file_name = $file_name;
-        
-        if(isset($_POST["country"])) {
-            $country = $_POST["country"];
-        }
-        $dog->country_id = $country;
-        $dog->purpose = $request->input('purpose');
-        $dog->color = $request->input('color');
-        $dog->feature = $request->input('feature');
-        $dog->history = $request->input('history');
-        $dog->save();
-        return view('tests.index');
-    }
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Dog  $dog
-     * @return \Illuminate\Http\Response
-     */
-
     public function dogdetails(int $area_id)
     {
         $results = Dog::with('country:id,name as country_name,area_id', 'area:id')
@@ -91,11 +58,4 @@ class DogController extends Controller
         })->simplePaginate(1);
         return view('tests.dogdetails', compact('results'));
     }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Dog  $dog
-     * @return \Illuminate\Http\Response
-     */
 }

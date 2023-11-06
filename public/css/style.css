@@ -414,7 +414,7 @@ a {
 .dogarticle {
   width: 80%;
   margin: 0 auto;
-  background-color: #ffeaea;
+  background-color: rgba(241, 141, 158, 0.2);
 }
 
 .dog_img {
