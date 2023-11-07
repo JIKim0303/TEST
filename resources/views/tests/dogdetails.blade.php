@@ -8,7 +8,7 @@
         <div class="dogbox">
             @foreach($results as $result)
                     <section class="dogtitle">
-                        <img src="{{ asset('storage/'.$result->file_name) }}">
+                        <img class="dog_img" src="{{ asset('storage/'.$result->file_name) }}">
                     </section>
                 <h1 class="dogtitle">犬種名：{{ $result->name }}</h1>
                 <h3 class="dogtitle">原産国：{{ $result->country->country_name }}</h3>
